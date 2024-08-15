@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: rgb(251, 251, 251);
+}
+.width-set {
+  width: 200px;
+}
+.width-set-country {
+  width: 220px;
+}
+.p-dropdown-items {
+  background-color: white !important;
+  padding-top: 10px;
+}
+.p-dropdown-items li {
+  padding: 3px;
+}
+.p-dropdown-items li:hover {
+  background-color: rgb(172, 172, 172);
+}
+.btn-class {
+  border-radius: 7px;
+  padding: 10px;
+  /* left: 18vw;
+    top: 88vh; */
+  /* position: absolute; */
+  width: 20vw;
+  background-color: rgb(75, 75, 75);
+}
+.div-media-class {
+  height: 70vh;
+}
+.btn-class:hover {
+  background-color: rgb(32, 32, 32);
+}
+@media screen and (max-width: 1084px) {
+  .form-media-class {
+    flex-direction: column;
+  }
+  .div-media-class {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .div-media-class label {
+    font-size: 0.75rem;
+  }
+  .btn-class {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.sidebar-closed .sidebar {
+  width: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.sidebar-toggle-btn {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  border: 1px solid #131313;
+  padding: 5px 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
+
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm
+}
